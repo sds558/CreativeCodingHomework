@@ -5,7 +5,7 @@ var x1= random(0, 799);
 var y1= random(0, 599);
 
 function setup() {
-  createCanvas(800, 600); 
+  createCanvas(1200, 800); 
   
   background(0, 0, 0);
   
@@ -17,24 +17,15 @@ function draw() {
   g = 255;
   b = random(0, 255);
 
+  var w = random(0, 20);
+  var h= random(0, 20);
   
-  fill(r, g, b); 
-  stroke(0, 0, 0, 25);
-  star(mouseX, mouseY, 5, 10, 5);
+  fill(r, g, b, 25);
+  noStroke();
+  star(mouseX, mouseY, w, h, 5);
   
-  /*
-  push();
-  translate(width*0.2, height*0.5);
-  rotate(frameCount /5.0);
-  star(0, 0, 5, 70, 3); 
-  pop();
   
-  push();
-  translate(width*0.5, height*0.5);
-  rotate(frameCount / 5.0);
-  star(0, 0, 80, 100, 40); 
-  pop();
-  */
+  
   
   fill(r, 255, b, 25); 
   stroke(0, 0, 0, 25);
@@ -42,10 +33,11 @@ function draw() {
   rotate(frameCount / 0.0009);
   star(0, 0, 80, 150, 5); 
   
-  fill(r, 255, b, 15); 
-  stroke(0, 0, 0, 25);
-  translate(width*0.20, height*0.20);
-  rotate(frameCount / 0.0009);
+  fill(r, g, b, 25); 
+  //stroke(0, 0, 0, 25);
+  noStroke();
+  translate(width*0.15, height*0.15);
+  rotate(frameCount / 0.0040);
   star(0, 0, 5, 70, 5); 
   
 
