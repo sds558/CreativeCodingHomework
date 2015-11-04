@@ -16,6 +16,7 @@ function draw() {
   
   
 
+
   var w = random(0, 25);
   var h= random(0, 25);
   var coordX = random(0, 1200); //X coords for background stars
